@@ -1,0 +1,183 @@
+/* Calculator mobile patch */
+@media (max-width: 760px){
+  body:has(#trade-main-grid) main{
+    padding-left:12px !important;
+    padding-right:12px !important;
+  }
+
+  #trade-main-grid{
+    grid-template-columns:1fr !important;
+    gap:22px !important;
+  }
+
+  #trade-bar-wrap{
+    padding:14px 12px !important;
+    border-radius:18px !important;
+  }
+
+  #tg-total,
+  #tr-total{
+    font-size:28px !important;
+    line-height:1 !important;
+  }
+
+  #trade-verdict-top{
+    font-size:18px !important;
+    line-height:1.25 !important;
+    text-align:center !important;
+  }
+
+  #tg-grid,
+  #tr-grid{
+    display:grid !important;
+    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+    gap:10px !important;
+    min-height:auto !important;
+  }
+
+  .trade-card{
+    border-radius:14px !important;
+    min-height:0 !important;
+  }
+
+  .trade-card-bottom{
+    padding:20px 6px 6px !important;
+  }
+
+  .trade-card-meta{
+    font-size:10px !important;
+    line-height:1.25 !important;
+  }
+
+  .trade-chip-label{
+    max-width:58px !important;
+  }
+
+  #picker-modal{
+    align-items:stretch !important;
+    justify-content:flex-end !important;
+    padding:8px !important;
+    background:rgba(0,0,0,.78) !important;
+  }
+  #picker-modal > div{
+    width:100% !important;
+    max-width:none !important;
+    max-height:calc(100dvh - 16px) !important;
+    border-radius:20px 20px 16px 16px !important;
+    padding:12px !important;
+    overflow-y:auto !important;
+    -webkit-overflow-scrolling:touch !important;
+  }
+
+  #picker-search{
+    font-size:16px !important;
+    padding:12px 14px !important;
+    border-radius:13px !important;
+  }
+
+  #picker-grid{
+    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+    gap:8px !important;
+    max-height:calc(100dvh - 170px) !important;
+  }
+
+  #picker-grid > *{
+    min-width:0 !important;
+  }
+
+  #picker-step2{
+    padding-bottom:84px !important;
+  }
+
+  #picker-detail > div{
+    grid-template-columns:1fr !important;
+    gap:12px !important;
+  }
+
+  #picker-detail img{
+    max-width:170px !important;
+    max-height:170px !important;
+    margin:0 auto !important;
+    display:block !important;
+  }
+
+  #picker-detail h2,
+  #picker-detail [style*="font-size:28px"]{
+    font-size:25px !important;
+    text-align:left !important;
+  }
+
+  #picker-detail [style*="grid-template-columns:repeat(3"]{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:9px !important;
+  }
+
+  #picker-detail [style*="grid-template-columns:1fr 1fr"]{
+    grid-template-columns:1fr !important;
+  }
+
+  #detail-warning-box,
+  #taco-preference-box{
+    border-radius:14px !important;
+    padding:11px !important;
+    font-size:12px !important;
+    line-height:1.55 !important;
+  }
+
+  #detail-mut,
+  #detail-qty,
+  #trait-ac-input{
+    min-height:52px !important;
+    font-size:16px !important;
+    border-radius:14px !important;
+  }
+
+  #picker-detail button[onclick^="addToTrade"]{
+    position:sticky !important;
+    bottom:8px !important;
+    z-index:30 !important;
+    min-height:58px !important;
+    border-radius:16px !important;
+    font-size:18px !important;
+    box-shadow:0 14px 36px rgba(0,0,0,.42) !important;
+  }
+
+  #value-report-modal{
+    padding:10px !important;
+    align-items:flex-end !important;
+  }
+  #value-report-modal > div{
+    width:100% !important;
+    max-width:none !important;
+    max-height:92dvh !important;
+    border-radius:20px 20px 16px 16px !important;
+    padding:14px !important;
+  }
+
+  .calc-two-col{
+    grid-template-columns:1fr !important;
+    gap:10px !important;
+  }
+
+  #inc-result > div{
+    align-items:flex-start !important;
+    gap:12px !important;
+  }
+  #inc-img{
+    width:58px !important;
+    height:58px !important;
+  }
+  #inc-val{
+    font-size:27px !important;
+  }
+}
+
+@media (max-width: 420px){
+  #tg-grid,
+  #tr-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+  #picker-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+}

@@ -1,0 +1,102 @@
+/* Mobile header patch — Steal a Brainrot Helper */
+@media (max-width: 760px){
+  html{scroll-padding-top:64px}
+  header#site-header,
+  #site-header{
+    height:60px !important;
+    min-height:60px !important;
+    padding:0 12px !important;
+    display:grid !important;
+    grid-template-columns:auto 1fr auto !important;
+    gap:8px !important;
+    align-items:center !important;
+    overflow:visible !important;
+  }
+
+  #site-header .logo{
+    min-width:0 !important;
+    max-width:170px !important;
+    overflow:hidden !important;
+    display:flex !important;
+    align-items:center !important;
+  }
+  #site-header .logo img{
+    height:42px !important;
+    max-width:156px !important;
+    width:auto !important;
+    object-fit:contain !important;
+    display:block !important;
+  }
+
+  #site-header nav{
+    display:none !important;
+  }
+
+  #site-header .nav-burger{
+    display:flex !important;
+    width:46px !important;
+    height:46px !important;
+    margin-left:auto !important;
+    border-radius:14px !important;
+    border:1.5px solid rgba(148,163,184,.30) !important;
+    background:rgba(22,24,38,.94) !important;
+    box-shadow:0 8px 26px rgba(0,0,0,.30) !important;
+    padding:0 11px !important;
+  }
+  #site-header .nav-burger span{
+    height:3px !important;
+    border-radius:99px !important;
+    background:#f0f2ff !important;
+  }
+
+  .nav-drawer{
+    width:min(88vw,360px) !important;
+    background:linear-gradient(180deg,#101426,#0d0f1a) !important;
+    border-left:1.5px solid rgba(148,163,184,.22) !important;
+    padding-bottom:max(22px,env(safe-area-inset-bottom)) !important;
+    box-shadow:-18px 0 60px rgba(0,0,0,.62) !important;
+  }
+  .nav-drawer-head{
+    height:64px !important;
+    padding:14px 16px !important;
+    background:rgba(16,20,38,.98) !important;
+    backdrop-filter:blur(16px) !important;
+    border-bottom:1px solid rgba(148,163,184,.16) !important;
+  }
+  .nav-drawer-head span{
+    font-size:20px !important;
+    letter-spacing:.2px !important;
+  }
+  .nav-drawer-close{
+    width:42px !important;
+    height:42px !important;
+    border-radius:13px !important;
+    font-size:18px !important;
+    color:#fff !important;
+    background:rgba(255,255,255,.07) !important;
+    border:1px solid rgba(255,255,255,.10) !important;
+  }
+  .nav-drawer a{
+    min-height:52px !important;
+    display:flex !important;
+    align-items:center !important;
+    padding:15px 18px !important;
+    font-size:17px !important;
+    font-weight:700 !important;
+    border-bottom:1px solid rgba(148,163,184,.10) !important;
+  }
+  .nav-drawer a.active{
+    color:#fff !important;
+    background:linear-gradient(90deg,rgba(255,77,109,.20),rgba(124,58,237,.14)) !important;
+    box-shadow:inset 4px 0 0 var(--accent) !important;
+  }
+  .nav-overlay{
+    background:rgba(0,0,0,.70) !important;
+    backdrop-filter:blur(2px) !important;
+  }
+}
+
+@media (max-width: 380px){
+  #site-header .logo img{height:38px !important;max-width:132px !important}
+  #site-header .nav-burger{width:44px !important;height:44px !important}
+}

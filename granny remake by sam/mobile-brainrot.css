@@ -1,0 +1,150 @@
+/* Brainrot detail mobile patch */
+@media (max-width: 760px){
+  body:has(.detail-hero) main{
+    padding-left:12px !important;
+    padding-right:12px !important;
+  }
+
+  .breadcrumb{
+    font-size:11px !important;
+    overflow-x:auto !important;
+    white-space:nowrap !important;
+    padding-bottom:4px !important;
+  }
+
+  .detail-hero{
+    display:grid !important;
+    grid-template-columns:96px 1fr !important;
+    gap:12px !important;
+    align-items:start !important;
+    text-align:left !important;
+    margin-bottom:18px !important;
+  }
+  .detail-img{
+    width:96px !important;
+    height:96px !important;
+    border-radius:16px !important;
+  }
+  .detail-info{
+    min-width:0 !important;
+    width:100% !important;
+  }
+  .detail-info h1{
+    font-size:clamp(28px,8.5vw,42px) !important;
+    line-height:1 !important;
+    margin-bottom:8px !important;
+    overflow-wrap:anywhere !important;
+  }
+  .detail-info .rb{
+    font-size:11px !important;
+    padding:5px 8px !important;
+  }
+
+  .detail-info > div[style*="grid-template-columns"],
+  .detail-info [style*="grid-template-columns:repeat"]{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:9px !important;
+  }
+
+  .stat-card{
+    border-radius:14px !important;
+    padding:11px 9px !important;
+  }
+  .stat-card .sc-label{
+    font-size:9px !important;
+    letter-spacing:.5px !important;
+  }
+  .stat-card .sc-val{
+    font-size:20px !important;
+    line-height:1.12 !important;
+  }
+
+  .detail-section{
+    border-radius:16px !important;
+    padding:15px !important;
+    margin-bottom:14px !important;
+  }
+  .detail-section h2{
+    font-size:20px !important;
+    line-height:1.15 !important;
+  }
+  .detail-section p{
+    font-size:13px !important;
+    line-height:1.65 !important;
+  }
+
+  #mutation-exist-box{
+    border-radius:16px !important;
+    padding:14px !important;
+    margin-bottom:14px !important;
+  }
+  #mutation-exist-box h2{
+    font-size:19px !important;
+  }
+  #mutation-exist-box p{
+    font-size:12px !important;
+  }
+  #mutation-exist-box div[style*="grid-template-columns:118px 1fr 96px"]{
+    grid-template-columns:94px 1fr 72px !important;
+    gap:7px !important;
+    padding:8px 0 !important;
+  }
+  #mutation-exist-box strong{
+    font-size:12px !important;
+  }
+  #mutation-exist-box div[style*="text-align:right"]{
+    font-size:12px !important;
+  }
+
+  .mut-table{
+    min-width:620px !important;
+  }
+  .mut-table th,
+  .mut-table td{
+    padding:7px 8px !important;
+    font-size:11px !important;
+  }
+  .detail-section:has(.mut-table){
+    overflow-x:auto !important;
+    -webkit-overflow-scrolling:touch !important;
+  }
+
+  .sim-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:10px !important;
+  }
+  .sim-card{
+    border-radius:14px !important;
+    padding:10px !important;
+  }
+  .sim-card img{
+    width:58px !important;
+    height:58px !important;
+  }
+
+  .detail-cta{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:10px !important;
+  }
+  .detail-cta a,
+  .detail-cta button{
+    width:100% !important;
+    min-height:48px !important;
+  }
+}
+
+@media (max-width: 420px){
+  .detail-hero{
+    grid-template-columns:86px 1fr !important;
+    gap:10px !important;
+  }
+  .detail-img{
+    width:86px !important;
+    height:86px !important;
+  }
+  .detail-info > div[style*="grid-template-columns"],
+  .detail-info [style*="grid-template-columns:repeat"]{
+    grid-template-columns:1fr !important;
+  }
+}
